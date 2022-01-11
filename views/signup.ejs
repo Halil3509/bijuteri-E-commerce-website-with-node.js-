@@ -1,0 +1,43 @@
+<%- include('./partial/header') -%>
+
+    <div class="container"  style="margin-top: 200px; margin-bottom: 200px;">
+        <div class="col-lg-6">
+            <div class="register-form">
+                <% if(action === 'fault') { %>
+                    <div class="alert alert-danger" role="alert">
+                        Bu E-posta daha önceden kullanıldı.
+                      </div>
+                    <% } %>
+                <% if(action === 'error') { %>
+                    <div class="alert alert-danger" role="alert">
+                        Eksik Yerleri Lütfen dolduruz.
+                      </div>
+                    <% } %>
+                    <h1 class="mb-5" style="text-align: center; color: rgb(211, 24, 24);"><b>Bujiteri Satış Sitesi Kayıt Ol</b></h1>
+                <form action="/signup" method="post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Ad</label>
+                            <input class="form-control" type="text" name="Ad" placeholder="Ad">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Soyad</label>
+                            <input class="form-control" type="text" name="Soyad" placeholder="Soyad">
+                        </div>
+                        <div class="col-md-6">
+                            <label>E-mail</label>
+                            <input class="form-control" type="text" name="Email" placeholder="E-mail">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Şifre</label>
+                            <input class="form-control" type="password" name="Sifre" placeholder="Şifre">
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-success" value="Üye Ol">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <%- include('./partial/footer') -%>

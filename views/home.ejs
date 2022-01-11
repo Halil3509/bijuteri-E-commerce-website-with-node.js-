@@ -1,0 +1,432 @@
+<%- include('./partial/introduceheader') -%>
+
+    <!-- Main Slider Start -->
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <nav class="navbar bg-light">
+                        <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa fa-home"></i>Ana Sayfa</a>
+                                </li>                      
+                            <form action="/urun/filter" method="post">
+                                <input type="hidden" name="kategoriId" value="61cb66e0ee81fff71b6645ff">
+                                <input type="hidden" name="userId" value="<%= id %>">
+                                <li class="nav-item">
+                                    <input class="btn btn-outline-primary mt-3 mb-3" type="submit" value="Küpe">
+                                </li>             
+                            </form>
+                            <form action="/urun/filter" method="post">
+                                <input type="hidden" name="kategoriId" value="61cb66bf0df2d4ff1b4619f3">
+                                <input type="hidden" name="userId" value="<%= id %>">
+                                <li class="nav-item">
+                                    <input class="btn btn-outline-primary mt-3 mb-3" type="submit" value="Kolye">
+                                </li>
+                            </form>
+                            <form action="/urun/filter" method="post">
+                                <input type="hidden" name="kategoriId" value="61cb66f8fb8a1a2d4a23ec0d">
+                                <input type="hidden" name="userId" value="<%= id %>">
+                                <li class="nav-item">
+                                    <input class="btn btn-outline-primary mt-3 mb-3" type="submit" value="Yüzük">
+                                </li>
+                            </form>
+                            <form action="/urun/filter" method="post">
+                                <input type="hidden" name="kategoriId" value="61cb66eb3d6d40a51c87fbf6">
+                                <input type="hidden" name="userId" value="<%= id %>">
+                                <li class="nav-item">
+                                    <input class="btn btn-outline-primary mt-3 mb-3" type="submit" value="Bileklik">
+                                </li>
+                            </form>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Slider End -->
+
+
+    <!-- Category Start-->
+    <div class="category">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="category-item ch-400">
+                        <img src="../template/img/category-3.jpg" />
+                        <a class="category-name" href="#">
+                            <p>Kolye</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-item ch-400">
+                        <img src="../template/img/category-4.jpg" />
+                        <a class="category-name" href="#">
+                            <p>Bileklik</p>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="category-item ch-400">
+                        <img src="../template/img/category-1.jpg" />
+                        <a class="category-name" href="#">
+                            <p>Yüzük</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-item ch-400">
+                        <img src="../template/img/category-2.jpg" />
+                        <a class="category-name" href="#">
+                            <p>Küpe</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Category End-->
+
+    <!-- Call to Action Start -->
+    <div class="call-to-action">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>Herhangi Bir Sorunda Bize Ulaşın</h1>
+                </div>
+                <div class="col-md-6">
+                    <a href="tel:05555555">+90-555-55-55</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Call to Action End -->
+
+    <!-- Featured Product Start -->
+    <div class="featured-product product">
+        <div class="container-fluid">
+            <div class="section-header">
+                <h1>Ürünler</h1>
+            </div>
+            <div class="row align-items-center product-slider product-slider-4">
+                <div class="col-lg-3">
+                    <div class="product-item">
+                        <div class="product-title">
+                            <a href="#">Ürün Adı</a>
+                            <div class="ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="../template/img/product-1.jpg" alt="Product Image">
+                            </a>
+
+                        </div>
+                        <div class="product-price">
+                            <h3><span>₺</span>99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-item">
+                        <div class="product-title">
+                            <a href="#">Ürün Adı</a>
+                            <div class="ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="../template/img/product-2.jpg" alt="Product Image">
+                            </a>
+
+                        </div>
+                        <div class="product-price">
+                            <h3><span>₺</span>99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-item">
+                        <div class="product-title">
+                            <a href="#">Ürün Adı</a>
+                            <div class="ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="../template/img/product-3.jpg" alt="Product Image">
+                            </a>
+
+                        </div>
+                        <div class="product-price">
+                            <h3><span>₺</span>99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-item">
+                        <div class="product-title">
+                            <a href="#">Ürün Adı</a>
+                            <div class="ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="../template/img/product-4.jpg" alt="Product Image">
+                            </a>
+
+                        </div>
+                        <div class="product-price">
+                            <h3><span>₺</span>99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-item">
+                        <div class="product-title">
+                            <a href="#">Ürün Adı</a>
+                            <div class="ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="../template/img/product-5.jpg" alt="Product Image">
+                            </a>
+
+                        </div>
+                        <div class="product-price">
+                            <h3><span>₺</span>99</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featured Product End -->
+
+    <!-- Newsletter Start -->
+    <div class="newsletter">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Sitemize üye olun </h1>
+                </div>
+                <div class="col-md-6">
+                    <div class="form">
+                        <input type="email" value="Your email here">
+                        <button>Katıl</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+    <!-- Recent Product Start -->
+    <div class="recent-product product">
+        <div class="container-fluid">
+            <div class="section-header">
+                <h1>Son Ürünler</h1>
+            </div>
+            <div class="row align-items-center product-slider product-slider-4">
+                <div class="col-lg-3">
+                    <div class="product-item">
+                        <div class="product-title">
+                            <a href="#">Ürün Adı</a>
+                            <div class="ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="../template/img/product-6.jpg" alt="Product Image">
+                            </a>
+
+                        </div>
+                        <div class="product-price">
+                            <h3><span>₺</span>99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-item">
+                        <div class="product-title">
+                            <a href="#">Ürün Adı</a>
+                            <div class="ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="../template/img/product-7.jpg" alt="Product Image">
+                            </a>
+
+                        </div>
+                        <div class="product-price">
+                            <h3><span>₺</span>99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-item">
+                        <div class="product-title">
+                            <a href="#">Ürün Adı</a>
+                            <div class="ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="../template/img/product-8.jpg" alt="Product Image">
+                            </a>
+
+                        </div>
+                        <div class="product-price">
+                            <h3><span>₺</span>99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-item">
+                        <div class="product-title">
+                            <a href="#">Ürün Adı</a>
+                            <div class="ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="../template/img/product-9.jpg" alt="Product Image">
+                            </a>
+
+                        </div>
+                        <div class="product-price">
+                            <h3><span>₺</span>99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-item">
+                        <div class="product-title">
+                            <a href="#">Ürün Adı </a>
+                            <div class="ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="../template/img/product-10.jpg" alt="Product Image">
+                            </a>
+
+                        </div>
+                        <div class="product-price">
+                            <h3><span>₺</span>99</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Recent Product End -->
+
+    <!-- Review Start -->
+    <div class="review">
+        <div class="container-fluid">
+            <div class="row align-items-center review-slider normal-slider">
+                <div class="col-md-6">
+                    <div class="review-slider-item">
+                        <div class="review-img">
+                            <img src="../template/img/review-1.jpg" alt="Image">
+                        </div>
+                        <div class="review-text">
+                            <h2>Ceren Sürmeli</h2>
+                            <h3>200601066</h3>
+                            <div class="ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>
+                                İzmir Bakırçay Üniversitesi / Bilgisayar Mühendisliği / 2. Sınıf
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="review-slider-item">
+                        <div class="review-img">
+                            <img src="../template/img/review-2.jpg" alt="Image">
+                        </div>
+                        <div class="review-text">
+                            <h2>Zeliha Çabuk</h2>
+                            <h3>200601068</h3>
+                            <div class="ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>
+                                İzmir Bakırçay Üniversitesi / Bilgisayar Mühendisliği / 2. Sınıf
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Review End -->
+
+    <%- include('./partial/footer') -%>

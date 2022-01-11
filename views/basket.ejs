@@ -1,0 +1,39 @@
+<%- include('./partial/introduceheader') -%>
+
+    <div class="container">
+        <h1 class="mb-5">Sepet</h1>
+        <% for(i=0;i<orders.length;i++) { %>
+            <div class="row">
+                <h4 style="margin-left: 30px; text-decoration: underline;"><b>
+                        <%= orders[i].urun.Baslik %>
+                    </b></h4>
+            </div>
+            <div class="row" style=" margin-bottom: 100px;">
+                <div class="col-4">
+                    <img src="<%= orders[i].urun.ResimUrl%>" alt="" style="width: 250px; height: 200px;">
+                </div>
+                <div class="col-4 mt-5">
+                    <p><b>Kategori: </b>
+                        <%= orders[i].urun.Kategori.Ad %>
+                    </p>
+                    <p><b>Fiyat: </b>
+                        <%= orders[i].urun.Fiyat %> TL
+                    </p>
+                    <p><b>Açıklama: </b>
+                        <%= orders[i].urun.Aciklama %>
+                    </p>
+                </div>
+                <div class="col-4">
+                    <form action="/siparis/removefrombasket" method="post">
+                        <input type="hidden" name="userId" value="<%= id %>">
+                        <input type="hidden" name="orderId" value="<%= orders[i]._id %>">
+                        <input type="submit" class="btn btn-danger mt-5" style="width: 90px;"
+                            value="Sepetten Çıkar">
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <% } %>
+    </div>
+
+    <%- include('./partial/footer') -%>

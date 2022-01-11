@@ -1,0 +1,55 @@
+<%- include('./partial/introduceheader') -%>
+
+ <!-- My Account Start -->
+  <div class="my-account">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link" id="address-nav" data-toggle="pill" href="#address-tab" role="tab"><i class="fa fa-map-marker-alt"></i>Adreslerim</a>
+                    <a class="nav-link" id="account-nav" data-toggle="pill" href="#account-tab" role="tab"><i class="fa fa-user"></i>Hesap Detayı</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content">
+              
+                    <div class="tab-pane fade" id="account-tab" role="tabpanel" aria-labelledby="account-nav">
+                        <h4>Hesap Detayı</h4>
+                        <div class="row">
+                          <form action="/kullanici/changedata" method="post" style="width: 3000px;">
+                              <input type="hidden" value="<%= id %>" name="userId">
+                            <div class="col-md-6">
+                                <input class="form-control" type="text" value="<%= ad %>" placeholder="Ad" name="Ad">
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control" type="text" value="<%= soyad %>" placeholder="Soyad" name="Soyad">
+                            </div>
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" value="<%= adres %>" placeholder="Adres" name="Adres">
+                            </div>
+                            <div class="col-md-12">
+                               <input type="submit" value="Bilgilerimi Güncelle" class="btn">
+                                <br><br>
+                            </div>
+                          </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="address-tab" role="tabpanel" aria-labelledby="address-nav">
+                        <h4 class="mb-5"><b>Adreslerim</b></h4>
+                        <% for(i=0;i<adresler.length;i++) {  %>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p><%= adresler[i].AcikAdres %></p>
+                                <hr>
+                            </div>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- My Account End -->
+
+<%- include('./partial/footer') -%>
